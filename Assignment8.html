@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<div>
+     <input type="text" value="The Text to Copy" id="copyMe">
+     <button onclick="copyMyText()">Copy To Clipboard</button>
+</div>
+<script type="text/javascript">
+function copyMyText() {
+     
+     var textToCopy = document.getElementById("copyMe");
+     
+     textToCopy.select();
+     
+     document.execCommand("copy");
+}
+</script>
+</html>
